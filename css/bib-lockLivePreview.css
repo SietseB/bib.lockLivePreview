@@ -1,0 +1,15 @@
+/* Toolbar icon */
+#bib-lockLivePreview-icon {
+    background: url(../images/bib-lockLivePreview-icon.svg) no-repeat 0 0;
+}
+
+#bib-lockLivePreview-icon[status="not-active"] {
+	background-position: 0 0;
+}
+#bib-lockLivePreview-icon[status="active-not-current"] {
+	opacity: 0.6;
+	background-position: 0 -48px;
+}
+#bib-lockLivePreview-icon[status="active-current"] {
+	background-position: 0 -48px;
+}

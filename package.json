@@ -1,0 +1,26 @@
+{
+    "name": "bib.lockLivePreview",
+    "title": "Lock Live Preview",
+    "description": "Lock the Live Preview to a page of your choosing. The Live Preview won't switch pages anymore when you change the active document in the editor.",
+    "homepage": "https://github.com/sietseb/brackets-lockLivePreview",
+    "version": "0.1.0",
+    "author": "Sietse Brouwer <info@brouwerinbeeld.nl> (http://brouwerinbeeld.nl)",
+    "license": "MIT",
+    "keywords": [
+        "lock",
+        "pin",
+		"fixed",
+        "live",
+        "preview",
+		"php"
+    ],
+    "i18n": ["en", "nl"],
+    "package-i18n": {
+        "nl": {
+            "description": "Vergrendel een pagina in de Live Preview. De Live Preview wisselt niet meer van pagina als je van bestand wisselt in de editor."
+        }
+    },
+    "engines": {
+        "brackets": ">=1.2.0"
+    }
+}
