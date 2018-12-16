@@ -11,7 +11,14 @@ Brackets' Live Preview is truly great, but it always follows the active document
 
 ## How to use
 
-Open the page you want to preview in the editor. Click on the Locked Live Preview icon in the main toolbar (see screenshot below). Or in the main menu, select **File > Locked Live Preview**. Or use the shortcut **Ctrl-Alt-Shift-P**.
+Open the page you want to preview in the editor. 
+
+Click on the **Locked Live Preview icon** in the main toolbar (see screenshot below). 
+
+Or in the main menu, select **File > Locked Live Preview**. 
+
+Or use the shortcut **Ctrl-Alt-Shift-P**.
+
 The page will launch in the Live Preview (as normal), but is pinned. You can switch to other documents in the editor without disturbing your preview.
 
 ![Screenshot](https://github.com/sietseb/bib.lockLivePreview/blob/master/screenshots/screen-1.png)
