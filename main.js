@@ -88,6 +88,7 @@ define(function (require, exports, module) {
 			doc 		= DocumentManager.getCurrentDocument(),
 			isConnected	= Inspector.connected(),
 			status		= 'not-active',
+			shortName	= (doc ? doc.file.name : ''),
 			title		= '';
 		
 		// Determine icon status when Live Preview is activated
@@ -102,13 +103,16 @@ define(function (require, exports, module) {
 		
 		// Set icon title, depending on context
 		if (status === 'active-current') {
-			title = Strings.ICON_TITLE_UNLOCK.format(doc.file.name);
+			title = Strings.ICON_TITLE_UNLOCK.format(shortName);
 		}
 		if (status === 'active-not-current') {
-			title = Strings.ICON_TITLE_SWITCH_LOCK.format(doc.file.name);
+			title = Strings.ICON_TITLE_SWITCH_LOCK.format(shortName);
 		}
 		if (status === 'not-active') {
-			title = Strings.ICON_TITLE_LOCK.format(doc.file.name);
+			title = Strings.ICON_TITLE_LOCK.format(shortName);
+		}
+		if (!doc) {
+			title = Strings.ICON_TITLE_NODOC;
 		}
 		el.prop('title', title);
 	}
@@ -136,10 +140,11 @@ define(function (require, exports, module) {
 		if (isConnected) {
 			// Live Preview connection exists
 			if (file === _currentLockedFile) {
-				// Current file was locked, now toggle to unlocked Live Preview
+				// Current file was locked, so end Locked Live Preview
 				_currentLockedFile = '';
 				_currentLockedNameShort = '';
 				_livePreviewIsLocked = false;
+				CommandManager.execute(Commands.FILE_LIVE_FILE_PREVIEW);
 			} else {
 				// New file is locked
 				_currentLockedFile = file;

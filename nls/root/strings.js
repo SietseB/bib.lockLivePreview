@@ -6,7 +6,8 @@ define({
 
     /* ICON TITLES */
     "ICON_TITLE_BASE": "Lock current page in live preview\n-Locked Live Preview-",
-	"ICON_TITLE_UNLOCK": "Remove lock on '{0}'\nreturn to default Brackets live preview behaviour\n-Locked Live Preview-",
-	"ICON_TITLE_LOCK": "Lock '{0}'\nand activate live preview\n-Locked Live Preview-",
-	"ICON_TITLE_SWITCH_LOCK": "Switch lock to '{0}'\nClick twice to cancel Locked Live Preview entirely\n-Locked Live Preview-"
+	"ICON_TITLE_UNLOCK": "Deactivate locked live preview\nof '{0}'\n-Locked Live Preview-",
+	"ICON_TITLE_LOCK": "Open '{0}'\nin locked live preview\n-Locked Live Preview-",
+	"ICON_TITLE_SWITCH_LOCK": "Switch to '{0}'\n in locked live preview\n-Locked Live Preview-",
+	"ICON_TITLE_NODOC": "First open a page in the editor\n-Locked Live Preview-"
 });
