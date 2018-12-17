@@ -1,5 +1,5 @@
 {
-    "name": "bib.lockLivePreview",
+    "name": "bib-locked-live-preview",
     "title": "Locked Live Preview",
     "description": "Lock the Live Preview to a page of your choosing. The Live Preview won't switch pages anymore when you change the active document in the editor.",
     "homepage": "https://github.com/sietseb/bib.lockLivePreview",
